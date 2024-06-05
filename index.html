@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Quiz Game</h1>
+      <p id="describe">
+        Choose the correct answer among the four options to score a point! Wrong
+        answers result in 0 points. Click the button below to get started!
+      </p>
+    </div>
+
+    <div class="start-button" id="start-button">
+      <button type="button" onclick="start()">Start</button>
+    </div>
+
+    <div class="question" id="question-container">
+      <h2 id="question">Sample Question</h2>
+    </div>
+
+    <div class="result" id="result-container">
+      <p id="display-result"></p>
+      <p id="score">Score: x/10</p>
+    </div>
+
+    <div class="options" id="options-container">
+      <button
+        type="button"
+        class="option-a"
+        id="option-1"
+        onclick="verify(document.getElementById('option-1').innerHTML)"
+      >
+        option-1
+      </button>
+      <button
+        type="button"
+        class="option-b"
+        id="option-2"
+        onclick="verify(document.getElementById('option-2').innerHTML)"
+      >
+        option-2
+      </button>
+      <button
+        type="button"
+        class="option-a"
+        id="option-3"
+        onclick="verify(document.getElementById('option-3').innerHTML)"
+      >
+        option-3
+      </button>
+      <button
+        type="button"
+        class="option-b"
+        id="option-4"
+        onclick="verify(document.getElementById('option-4').innerHTML)"
+      >
+        option-4
+      </button>
+    </div>
+
+    <div class="next-button" id="next-container">
+      <button type="button" id="next" onclick="goNext()">Next</button>
+    </div>
+  </body>
+</html>

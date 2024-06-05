@@ -1,0 +1,9 @@
+Abstract:
+- Interactive quiz game where users can answer questions and receive immediate feedback on their responses. 
+
+
+
+Instructions:
+- Start by designing the quiz layout using HTML and CSS. 
+- Use JavaScript to handle the logic of presenting questions, accepting user answers, and providing feedback on accuracy. 
+- Store the quiz questions and answers in an array or object and randomize the order of questions for added variety.
